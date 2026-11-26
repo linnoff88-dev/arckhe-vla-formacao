@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Formación en IA Incorporada (VLA) — La Escuela de Robótica Inteligente | ARCKHÉ AI</title>
+<meta content="La primera formación profesional brasileña en Vision-Language-Action e IA Incorporada. Mercado de US$ 38 bi hasta 2035, +78 mi de empleos y una brecha de 530 mil profesionales en Brasil. Aprende los fundamentos y entra en la nueva economía de los robots. ARCKHÉ AI" name="description"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FACC15',
+            dark: { 900: '#111827', 800: '#1f2937', 700: '#374151', 600: '#4b5563' }
+          }
+        }
+      }
+    }
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+    body { font-family: 'Inter', sans-serif; }
+    .dark body { background-color: #111827; }
+
+    /* Light mode overrides */
+    html:not(.dark) body { background-color: #f8fafc; }
+    html:not(.dark) .bg-dark-900 { background-color: #ffffff; }
+    html:not(.dark) .bg-dark-800 { background-color: #f9fafb; }
+    html:not(.dark) .bg-dark-700 { background-color: #f3f4f6; }
+    html:not(.dark) .bg-dark-600 { background-color: #e5e7eb; }
+    html:not(.dark) .text-neutral-100 { color: #111827; }
+    html:not(.dark) .text-neutral-300 { color: #4b5563; }
+    html:not(.dark) .text-neutral-400 { color: #6b7280; }
+    html:not(.dark) .text-neutral-500 { color: #9ca3af; }
+    html:not(.dark) .border-dark-600 { border-color: #d1d5db; }
+    html:not(.dark) .border-dark-700 { border-color: #e5e7eb; }
+
+    /* Light mode - accent colors */
+    html:not(.dark) .text-emerald-400 { color: #059669; }
+    html:not(.dark) .text-blue-400 { color: #2563eb; }
+    html:not(.dark) .text-purple-400 { color: #7c3aed; }
+    html:not(.dark) .text-rose-400 { color: #e11d48; }
+    html:not(.dark) .bg-emerald-500\/20 { background-color: rgba(5, 150, 105, 0.12); }
+    html:not(.dark) .bg-blue-500\/20 { background-color: rgba(37, 99, 235, 0.12); }
+    html:not(.dark) .bg-purple-500\/20 { background-color: rgba(124, 58, 237, 0.12); }
+    html:not(.dark) .bg-rose-500\/20 { background-color: rgba(225, 29, 72, 0.10); }
+    html:not(.dark) .border-emerald-500\/30 { border-color: rgba(5, 150, 105, 0.25); }
+    html:not(.dark) .border-blue-500\/30 { border-color: rgba(37, 99, 235, 0.25); }
+    html:not(.dark) .border-purple-500\/30 { border-color: rgba(124, 58, 237, 0.25); }
+    html:not(.dark) .border-rose-500\/30 { border-color: rgba(225, 29, 72, 0.25); }
+    html:not(.dark) .hover\:border-emerald-500\/50:hover { border-color: rgba(5, 150, 105, 0.4); }
+    html:not(.dark) .hover\:border-blue-500\/50:hover { border-color: rgba(37, 99, 235, 0.4); }
+    html:not(.dark) .hover\:border-purple-500\/50:hover { border-color: rgba(124, 58, 237, 0.4); }
+
+    /* Light mode - remove gradients */
+    html:not(.dark) [class*="bg-gradient-to"] { background-image: none !important; }
+
+    /* Light mode - special colors */
+    html:not(.dark) .text-primary { color: #a16207; }
+    html:not(.dark) .bg-primary\/10 { background-color: rgba(161, 98, 7, 0.08); }
+    html:not(.dark) .border-primary\/40 { border-color: rgba(161, 98, 7, 0.25); }
+    html:not(.dark) .text-sky-400 { color: #0369a1; }
+    html:not(.dark) .text-yellow-400 { color: #a16207; }
+    html:not(.dark) .hover\:text-sky-300:hover { color: #0284c7; }
+
+    /* Light mode - nav */
+    html:not(.dark) .bg-dark-900\/95 { background-color: rgba(255, 255, 255, 0.95); }
+
+    /* Dark mode - soft borders */
+    .dark .border-dark-600 { border-color: #374151; }
+    .dark .divide-dark-600 > :not([hidden]) ~ :not([hidden]) { border-color: #374151; }
+
+    html { scroll-behavior: smooth; }
+
+    /* SVG pulse */
+    @keyframes wf-pulse { 0%,100% { opacity:.55 } 50% { opacity:1 } }
+    @media (prefers-reduced-motion: no-preference) {
+      .wf-a { animation: wf-pulse 2.6s ease-in-out infinite; }
+      .wf-a:nth-child(2){animation-delay:.25s} .wf-a:nth-child(3){animation-delay:.5s}
+      .wf-a:nth-child(4){animation-delay:.75s} .wf-a:nth-child(5){animation-delay:1s}
+    }
+  </style>
+<link href="https://linnoff88-dev.github.io/arckhe-vla-formacao/" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-vla-formacao/en/" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-vla-formacao/es/" hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../en/" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="./" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
+<!-- NAV -->
+<nav class="fixed top-0 w-full bg-dark-900/95 backdrop-blur border-b border-dark-600 z-50">
+<div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="text-primary font-bold text-lg">VLA</span>
+<span class="text-neutral-500 hidden sm:inline">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium hidden sm:inline" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+</div>
+<div class="flex items-center gap-1 sm:gap-2">
+<a class="px-2 sm:px-3 py-1.5 rounded text-sm text-neutral-300 hover:bg-dark-800" href="#mercado">Mercado</a>
+<a class="px-2 sm:px-3 py-1.5 rounded text-sm text-neutral-300 hover:bg-dark-800 hidden sm:inline" href="#paises">Países</a>
+<a class="px-2 sm:px-3 py-1.5 rounded text-sm text-neutral-300 hover:bg-dark-800" href="#escola">La Escuela</a>
+<a class="px-3 py-1.5 rounded text-sm bg-primary/10 text-primary border border-primary/40 font-medium" href="#inscricao">Inscríbete</a>
+<button class="ml-1 p-2 rounded hover:bg-dark-700 text-neutral-400" onclick="document.documentElement.classList.toggle('dark')" title="Cambiar tema">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</div>
+</nav>
+<!-- ============================================================ -->
+<!-- HERO — a promessa                                            -->
+<!-- ============================================================ -->
+<section class="pt-24 pb-12">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<div class="inline-flex items-center gap-2 bg-primary/10 border border-primary/40 rounded-full px-4 py-1.5 text-primary text-sm font-medium mb-6">
+      🦾 La primera formación brasileña en IA incorporada
+    </div>
+<h1 class="text-4xl md:text-6xl font-extrabold mb-5 leading-[1.05]">
+      Los robots están aprendiendo a trabajar.<br/>
+<span class="text-emerald-400">Aprende a enseñarles</span> — antes que todos los demás.
+    </h1>
+<p class="text-lg md:text-xl text-neutral-300 max-w-2xl mx-auto mb-4">
+      Una escuela completa de <strong class="text-neutral-100">Vision-Language-Action (VLA)</strong>: la tecnología que hace que los robots <em>ver, entender y actuar</em> en el mundo físico. Desde los fundamentos hasta el deploy, en el año en que la robótica vivió su "momento ChatGPT".
+    </p>
+<p class="text-neutral-500 text-sm mb-8">Mercado de <strong class="text-primary">US$ 38 mil millones hasta 2035</strong> · <strong class="text-emerald-400">+78 millones</strong> de nuevos empleos hasta 2030 · <strong class="text-rose-400">530 mil</strong> puestos tech sin profesionales en Brasil</p>
+<!-- Hero SVG: Pessoa → Formação → Profissional VLA -->
+<div class="max-w-2xl mx-auto mb-9">
+<svg aria-label="Diagrama del recorrido: de principiante a profesional de VLA mediante la formación, con conexión al mercado en auge" class="w-full h-auto" font-family="Inter,sans-serif" role="img" viewbox="0 0 720 220">
+<defs>
+<filter height="180%" id="h-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="3.2"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
+<pattern height="22" id="h-grid" patternunits="userSpaceOnUse" width="22"><path d="M 22 0 L 0 0 0 22" fill="none" stroke="#FACC15" stroke-opacity="0.06" stroke-width="0.5"></path></pattern>
+<marker id="h-arrow" markerheight="7" markerwidth="9" orient="auto" refx="8" refy="3.5"><path d="M0,0 L9,3.5 L0,7" fill="#FACC15" fill-opacity="0.7"></path></marker>
+</defs>
+<rect fill="url(#h-grid)" height="220" width="720"></rect>
+<text fill="#FACC15" font-size="13" font-weight="700" opacity="0.85" text-anchor="middle" x="360" y="28">De la curiosidad al empleo en la nueva economía de los robots</text>
+<!-- Você -->
+<g class="wf-a" filter="url(#h-glow)">
+<rect fill="#0e1626" height="70" rx="12" stroke="#9ca3af" stroke-opacity="0.6" stroke-width="1.5" width="130" x="20" y="80"></rect>
+<text fill="#e5e7eb" font-size="13" font-weight="700" text-anchor="middle" x="85" y="110">👤 Tú</text>
+<text fill="#9ca3af" font-size="9" text-anchor="middle" x="85" y="130">Desarrollador · Ingeniero · Curioso</text>
+</g>
+<line marker-end="url(#h-arrow)" stroke="#FACC15" stroke-opacity="0.6" stroke-width="2" x1="152" x2="205" y1="115" y2="115"></line>
+<!-- Formação -->
+<g class="wf-a" filter="url(#h-glow)">
+<rect fill="#0e1626" height="106" rx="14" stroke="#FACC15" stroke-opacity="0.8" stroke-width="2.5" width="170" x="210" y="62"></rect>
+<text fill="#FACC15" font-size="15" font-weight="800" text-anchor="middle" x="295" y="92">Formación VLA</text>
+<text fill="#34d399" font-size="9" text-anchor="middle" x="295" y="113">Fundamentos</text>
+<text fill="#38bdf8" font-size="9" text-anchor="middle" x="295" y="128">Práctica · LeRobot · ROS2</text>
+<text fill="#c084fc" font-size="9" text-anchor="middle" x="295" y="143">Avanzado · Carrera</text>
+</g>
+<line marker-end="url(#h-arrow)" stroke="#FACC15" stroke-opacity="0.6" stroke-width="2" x1="382" x2="435" y1="115" y2="115"></line>
+<!-- Profissional -->
+<g class="wf-a" filter="url(#h-glow)">
+<rect fill="#0e1626" height="90" rx="12" stroke="#34d399" stroke-opacity="0.7" stroke-width="2" width="160" x="440" y="70"></rect>
+<text fill="#34d399" font-size="13" font-weight="700" text-anchor="middle" x="520" y="100">🦾 Profesional</text>
+<text fill="#9ca3af" font-size="9" text-anchor="middle" x="520" y="120">Ing. de Robot Learning</text>
+<text fill="#9ca3af" font-size="9" text-anchor="middle" x="520" y="135">US$ 122k–335k/año</text>
+</g>
+<!-- Mercado -->
+<g class="wf-a" filter="url(#h-glow)">
+<rect fill="#0e1626" height="62" rx="10" stroke="#38bdf8" stroke-opacity="0.7" stroke-width="1.8" width="78" x="625" y="84"></rect>
+<text fill="#38bdf8" font-size="12" font-weight="800" text-anchor="middle" x="664" y="110">$38B</text>
+<text fill="#9ca3af" font-size="8" text-anchor="middle" x="664" y="126">hasta 2035</text>
+</g>
+<line stroke="#38bdf8" stroke-opacity="0.5" stroke-width="1.6" x1="602" x2="623" y1="115" y2="115"></line>
+<text fill="#9ca3af" font-size="10" opacity="0.7" text-anchor="middle" x="360" y="200">Visión + Lenguaje + Acción: el cerebro de los robots que ya llegan a fábricas, almacenes y hospitales</text>
+</svg>
+</div>
+<div class="flex flex-wrap justify-center gap-3">
+<a class="bg-primary text-dark-900 font-bold px-7 py-3.5 rounded-lg hover:bg-yellow-400 transition-colors" href="#inscricao">Quiero asegurar mi lugar →</a>
+<a class="border border-dark-600 px-7 py-3.5 rounded-lg hover:bg-dark-800 transition-colors text-neutral-300" href="#mercado">Ver las cifras del mercado</a>
+</div>
+<p class="text-xs text-neutral-500 mt-4">100% en línea · Empieza por los fundamentos · Acceso inmediato al contenido abierto</p>
+</div>
+</section>
+<!-- ============================================================ -->
+<!-- STATS BAR                                                    -->
+<!-- ============================================================ -->
+<section class="py-8 border-y border-dark-600 bg-dark-800/40">
+<div class="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+<div><p class="text-3xl font-extrabold text-primary">US$ 38 bi</p><p class="text-sm text-neutral-400 mt-1">Mercado de humanoides en 2035 <span class="block text-xs text-neutral-500">Goldman Sachs, 2025</span></p></div>
+<div><p class="text-3xl font-extrabold text-emerald-400">+101%</p><p class="text-sm text-neutral-400 mt-1">Salto de la inversión en Physical AI en 2025 <span class="block text-xs text-neutral-500">PitchBook</span></p></div>
+<div><p class="text-3xl font-extrabold text-blue-400">+78 mi</p><p class="text-sm text-neutral-400 mt-1">Nuevos empleos netos hasta 2030 <span class="block text-xs text-neutral-500">WEF Future of Jobs 2025</span></p></div>
+<div><p class="text-3xl font-extrabold text-rose-400">530 mil</p><p class="text-sm text-neutral-400 mt-1">Puestos tech vacantes en Brasil <span class="block text-xs text-neutral-500">2025</span></p></div>
+</div>
+</section>
+<!-- ============================================================ -->
+<!-- O MOMENTO — por que agora                                    -->
+<!-- ============================================================ -->
+<section class="py-16">
+<div class="max-w-3xl mx-auto px-6">
+<p class="text-center text-primary font-semibold mb-3 text-sm tracking-wide uppercase">El punto de inflexión</p>
+<h2 class="text-3xl md:text-4xl font-bold text-center mb-6 leading-tight">La robótica acaba de vivir su “momento ChatGPT”.<br/>Y casi nadie en Brasil se dio cuenta.</h2>
+<div class="space-y-4 text-neutral-300 text-lg leading-relaxed">
+<p>En <strong class="text-neutral-100">octubre de 2024</strong>, Physical Intelligence lanzó el <strong>π0</strong> — el primer modelo entrenado a escala de internet que logró que un robot doblara ropa, armara cajas y preparara café <em>sin haber sido programado para cada tarea</em>. En <strong class="text-neutral-100">enero de 2025</strong>, a <strong>BMW</strong> puso modelos VLA en producción permanente en una fábrica. En <strong>2026</strong>, Jensen Huang (NVIDIA) declaró: el punto de inflexión de la robótica <em>ya sucedió</em> — no está por llegar.</p>
+<p>El costo de un humanoide cayó de <strong class="text-neutral-100">US$ 85.000 a US$ 25.000</strong> en dos años. Un brazo robótico de investigación, el <strong>SO-101</strong> de HuggingFace, cuesta <strong class="text-emerald-400">~US$ 100</strong>. Los mejores modelos —OpenVLA, π0, GR00T N1— son <strong>abiertos</strong>. Por primera vez en la historia, cualquier persona puede aprender, entrenar e implementar IA que actúa en el mundo físico.</p>
+<p class="text-neutral-100 font-medium">La oportunidad está abierta. La pregunta es: ¿vas a entrar ahora o dentro de cinco años, compitiendo con todo el mundo?</p>
+</div>
+</div>
+</section>
+<!-- ============================================================ -->
+<!-- MERCADO — pesquisa real                                      -->
+<!-- ============================================================ -->
+<section class="py-16 border-t border-dark-600 scroll-mt-16" id="mercado">
+<div class="max-w-5xl mx-auto px-6">
+<p class="text-center text-emerald-400 font-semibold mb-3 text-sm tracking-wide uppercase">Investigación de mercado · 2024–2026</p>
+<h2 class="text-3xl md:text-4xl font-bold text-center mb-3">Las cifras que demuestran la oportunidad</h2>
+<p class="text-neutral-400 text-center mb-12 max-w-2xl mx-auto">Datos de Goldman Sachs, Morgan Stanley, WEF, PwC, Crunchbase, PitchBook e IFR. Cada cifra aquí tiene fuente y año.</p>
+<!-- Crescimento do mercado: gráfico SVG -->
+<div class="rounded-2xl border border-dark-600 bg-dark-800/60 p-5 sm:p-7 mb-10">
+<h3 class="font-bold text-lg mb-1">Mercado de robots humanoides — de US$ 1,3 mil millones a US$ 38 mil millones</h3>
+<p class="text-sm text-neutral-400 mb-6">Rango de proyecciones de los analistas. La divergencia es tan grande que se vuelve un argumento: nadie sabe cuál es el límite.</p>
+<svg aria-label="Gráfico de barras del crecimiento del mercado de humanoides: US$ 1,3 mil millones en 2023, US$ 15 mil millones en 2030 y US$ 38 mil millones en 2035" class="w-full h-auto" font-family="Inter,sans-serif" role="img" viewbox="0 0 720 260">
+<defs>
+<lineargradient id="bar" x1="0" x2="0" y1="1" y2="0"><stop offset="0" stop-color="#FACC15" stop-opacity="0.35"></stop><stop offset="1" stop-color="#FACC15" stop-opacity="0.95"></stop></lineargradient>
+<filter height="160%" id="m-glow" width="160%" x="-30%" y="-30%"><fegaussianblur result="b" stddeviation="2.5"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
+</defs>
+<!-- eixo -->
+<line stroke="#4b5563" stroke-width="1" x1="70" x2="690" y1="210" y2="210"></line>
+<!-- 2023 -->
+<rect fill="url(#bar)" filter="url(#m-glow)" height="10" rx="3" width="90" x="120" y="200"></rect>
+<text fill="#9ca3af" font-size="11" text-anchor="middle" x="165" y="228">2023</text>
+<text fill="#FACC15" font-size="12" font-weight="700" text-anchor="middle" x="165" y="190">US$ 1,3 bi</text>
+<!-- 2030 -->
+<rect fill="url(#bar)" filter="url(#m-glow)" height="92" rx="3" width="90" x="320" y="118"></rect>
+<text fill="#9ca3af" font-size="11" text-anchor="middle" x="365" y="228">2030</text>
+<text fill="#FACC15" font-size="12" font-weight="700" text-anchor="middle" x="365" y="108">US$ 15 bi</text>
+<!-- 2035 -->
+<rect fill="url(#bar)" filter="url(#m-glow)" height="162" rx="3" width="90" x="520" y="48"></rect>
+<text fill="#9ca3af" font-size="11" text-anchor="middle" x="565" y="228">2035</text>
+<text fill="#FACC15" font-size="13" font-weight="800" text-anchor="middle" x="565" y="38">US$ 38 bi</text>
+<text fill="#6b7280" font-size="9" text-anchor="middle" x="380" y="252">Fuentes: Grand View Research (2023) · MarketsandMarkets (2030, CAGR 39,2%) · Goldman Sachs (2035)</text>
+</svg>
+<p class="text-xs text-neutral-500 mt-3">Morgan Stanley va más allá: proyecta <strong class="text-neutral-300">US$ 5 billones y 1.000 millones de humanoides en uso hasta 2050</strong> (2024).</p>
+</div>
+<!-- 3 colunas: VC / Empregos / Salários -->
+<div class="grid md:grid-cols-3 gap-5 mb-10">
+<div class="bg-dark-800 border border-dark-600 rounded-xl p-6">
+<p class="text-2xl mb-2">💰</p>
+<h4 class="font-bold mb-2">El dinero entra a un ritmo récord</h4>
+<p class="text-sm text-neutral-400">La inversión de capital de riesgo en robótica saltó de <strong class="text-neutral-200">US$ 7,8 bi (2024) a US$ 13,8 bi (2025)</strong> — +77% (Crunchbase). Según la definición más amplia de "IA física", US$ 27,6 mil millones, más del doble en un año (PitchBook).</p>
+</div>
+<div class="bg-dark-800 border border-dark-600 rounded-xl p-6">
+<p class="text-2xl mb-2">📊</p>
+<h4 class="font-bold mb-2">Empleos que se están creando</h4>
+<p class="text-sm text-neutral-400">WEF proyecta <strong class="text-neutral-200">170 mi de nuevos empleos</strong> y 92 mi desplazados hasta 2030: un saldo de +78 mi. <strong>58% de los empleadores</strong> dicen que la robótica y la automatización transformarán sus negocios (Future of Jobs 2025).</p>
+</div>
+<div class="bg-dark-800 border border-dark-600 rounded-xl p-6">
+<p class="text-2xl mb-2">🧾</p>
+<h4 class="font-bold mb-2">Salarios que impresionan</h4>
+<p class="text-sm text-neutral-400">Los puestos de IA pagan una mediana de <strong class="text-neutral-200">US$ 156.998</strong> (PwC, 2025), y quienes tienen skills de IA ganan <strong>+56%</strong> que pares. Robot/Embodied AI Engineer en EE. UU.: <strong>US$ 122k a 335k/año</strong> (Glassdoor, Meta, GM).</p>
+</div>
+</div>
+<!-- Rodadas recentes -->
+<h3 class="font-bold text-lg mb-4 text-center">Las startups que están absorbiendo el talento del mundo</h3>
+<div class="overflow-x-auto rounded-xl border border-dark-600">
+<table class="w-full text-sm">
+<thead class="bg-dark-800 text-neutral-400">
+<tr>
+<th class="text-left font-semibold px-4 py-3">Empresa</th>
+<th class="text-left font-semibold px-4 py-3">Valoración</th>
+<th class="text-left font-semibold px-4 py-3 hidden sm:table-cell">Ronda</th>
+<th class="text-left font-semibold px-4 py-3">Cuándo</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-dark-600">
+<tr><td class="px-4 py-3 font-medium">Figure AI</td><td class="px-4 py-3 text-emerald-400">US$ 39 bi</td><td class="px-4 py-3 hidden sm:table-cell text-neutral-400">Series C · US$ 1 bi+</td><td class="px-4 py-3 text-neutral-400">Set 2025</td></tr>
+<tr><td class="px-4 py-3 font-medium">Skild AI</td><td class="px-4 py-3 text-emerald-400">US$ 14 bi+</td><td class="px-4 py-3 hidden sm:table-cell text-neutral-400">Series C · US$ 1,4 bi</td><td class="px-4 py-3 text-neutral-400">Ene 2026</td></tr>
+<tr><td class="px-4 py-3 font-medium">Physical Intelligence (π)</td><td class="px-4 py-3 text-emerald-400">US$ 5,6 bi</td><td class="px-4 py-3 hidden sm:table-cell text-neutral-400">Series B · US$ 600 mi</td><td class="px-4 py-3 text-neutral-400">Nov 2025</td></tr>
+<tr><td class="px-4 py-3 font-medium">Apptronik</td><td class="px-4 py-3 text-emerald-400">US$ 5,5 bi</td><td class="px-4 py-3 hidden sm:table-cell text-neutral-400">Extensión de Series A · US$ 520 mi</td><td class="px-4 py-3 text-neutral-400">Feb 2026</td></tr>
+<tr><td class="px-4 py-3 font-medium">NEURA Robotics 🇩🇪</td><td class="px-4 py-3 text-neutral-300">—</td><td class="px-4 py-3 hidden sm:table-cell text-neutral-400">US$ 1,2 bi captados</td><td class="px-4 py-3 text-neutral-400">Mar 2026</td></tr>
+</tbody>
+</table>
+</div>
+<p class="text-xs text-neutral-500 mt-3">Fuentes: TechCrunch, Bloomberg, Crunchbase News, AIFundingTracker (2025–2026). Jeff Bezos invirtió personalmente en 7 de estas empresas.</p>
+</div>
+</section>
+<!-- ============================================================ -->
+<!-- PAÍSES — como o mundo está qualificando                      -->
+<!-- ============================================================ -->
+<section class="py-16 border-t border-dark-600 scroll-mt-16" id="paises">
+<div class="max-w-5xl mx-auto px-6">
+<p class="text-center text-blue-400 font-semibold mb-3 text-sm tracking-wide uppercase">Carrera global por el talento</p>
+<h2 class="text-3xl md:text-4xl font-bold text-center mb-3">Cómo están formando los países a este talento</h2>
+<p class="text-neutral-400 text-center mb-12 max-w-2xl mx-auto">Mientras los gobiernos invierten miles de millones en capacitación, Brasil todavía no tiene ninguna formación especializada en VLA. Este es el espacio que ocupa esta escuela.</p>
+<div class="grid md:grid-cols-2 gap-5">
+<!-- China -->
+<div class="bg-dark-800 border border-dark-600 rounded-xl p-6">
+<div class="flex items-center gap-3 mb-3"><span class="text-2xl">🇨🇳</span><h3 class="font-bold text-lg">China — estrategia nacional declarada</h3></div>
+<ul class="text-sm text-neutral-300 space-y-2 list-disc pl-5">
+<li>Robótica y embodied AI se destacan como "nueva vía industrial" de primer nivel en <strong>15.º Plan Quinquenal (2026–2030)</strong>.</li>
+<li>“Escuelas de robots” en Beijing y un centro de datos en Hubei con <strong>~100 humanoides</strong> repitiendo tareas cientos de veces al día para generar datos de entrenamiento.</li>
+<li>Unitree + AgiBot deberían representar <strong>~80% de los humanoides enviados en el mundo en 2026</strong>. Unitree G1 cuesta US$ 16.000.</li>
+<li>Densidad industrial: <strong>470 robots / 10 mil trabajadores</strong> (3.º del mundo): se duplicó en 4 años.</li>
+</ul>
+</div>
+<!-- EUA -->
+<div class="bg-dark-800 border border-dark-600 rounded-xl p-6">
+<div class="flex items-center gap-3 mb-3"><span class="text-2xl">🇺🇸</span><h3 class="font-bold text-lg">EE. UU. — academia + capital + defensa</h3></div>
+<ul class="text-sm text-neutral-300 space-y-2 list-disc pl-5">
+<li><strong>Stanford, Berkeley, CMU, MIT</strong> son la cuna de los modelos abiertos (OpenVLA, ALOHA, Octo) que usa todo el mundo.</li>
+<li>NSF financia robótica inteligente (~US$ 70 mi/ano); DoD destina <strong>US$ 10,3 bi</strong> la autonomía y la robótica.</li>
+<li>Skild AI nació de profesores de CMU; Physical Intelligence, de exinvestigadores de Google DeepMind.</li>
+<li>Los salarios de Embodied AI llegan a <strong>US$ 335 mil/año</strong> (General Motors, Mountain View).</li>
+</ul>
+</div>
+<!-- Europa -->
+<div class="bg-dark-800 border border-dark-600 rounded-xl p-6">
+<div class="flex items-center gap-3 mb-3"><span class="text-2xl">🇪🇺</span><h3 class="font-bold text-lg">Europa / Alemania — formación dual</h3></div>
+<ul class="text-sm text-neutral-300 space-y-2 list-disc pl-5">
+<li><strong>Horizon Europe</strong>: US$ 183,5 mi en robótica (2023–2025). <strong>High-Tech Strategy 2025</strong> alemana: US$ 369 mi.</li>
+<li>Alemania es el mayor mercado europeo (429 robots / 10 mil trabajadores) y apuesta por la formación técnica dual.</li>
+<li>NEURA Robotics se convirtió en la empresa europea de humanoides con más financiación: <strong>US$ 1,2 bi</strong> (mar 2026).</li>
+</ul>
+</div>
+<!-- Japão/Coreia -->
+<div class="bg-dark-800 border border-dark-600 rounded-xl p-6">
+<div class="flex items-center gap-3 mb-3"><span class="text-2xl">🇯🇵</span><h3 class="font-bold text-lg">Japón y Corea — políticas de Estado</h3></div>
+<ul class="text-sm text-neutral-300 space-y-2 list-disc pl-5">
+<li>Japón: "New Robot Strategy" para convertirse en el mayor centro de innovación en robótica, y el <strong>Moonshot R&amp;D</strong> (US$ 440 mi, hasta 2050).</li>
+<li>Corea del Sur está entre los 5 países con mayor densidad de robots industriales del mundo (IFR, 2025).</li>
+<li>Enfoque declarado: manufactura, salud y envejecimiento de la población.</li>
+</ul>
+</div>
+</div>
+<!-- Brasil: o white space -->
+<div class="mt-6 rounded-2xl border border-rose-500/30 bg-rose-500/10 p-6 sm:p-8">
+<div class="flex items-center gap-3 mb-4"><span class="text-2xl">🇧🇷</span><h3 class="font-bold text-xl">Brasil — la mayor brecha, la mayor oportunidad</h3></div>
+<div class="grid sm:grid-cols-3 gap-5 mb-5">
+<div><p class="text-2xl font-extrabold text-rose-400">530 mil</p><p class="text-sm text-neutral-300">profesionales tech que faltan en 2025: solo ~53 mil graduados al año.</p></div>
+<div><p class="text-2xl font-extrabold text-rose-400">R$ 23 bi</p><p class="text-sm text-neutral-300">del Plan Brasileño de IA (2024–28) para infraestructura y capacitación.</p></div>
+<div><p class="text-2xl font-extrabold text-rose-400">0</p><p class="text-sm text-neutral-300">formaciones especializadas en VLA / IA incorporada en el mercado nacional.</p></div>
+</div>
+<p class="text-sm text-neutral-300">SENAI-SP forma a 1 millón de aprendices/ano y ya lanzó un programa de IA con ServiceNow (ago 2025) — pero en <em>habilidades digitales generales</em>, no en robótica inteligente. Traducción: la demanda existe, el dinero existe y <strong class="text-neutral-100">todavía nadie está formando a este profesional</strong>. Quien aprende ahora llegará antes de que el mercado madure.</p>
+</div>
+</div>
+</section>
+<!-- ============================================================ -->
+<!-- A ESCOLA — o que você aprende (fundamentos)                  -->
+<!-- ============================================================ -->
+<section class="py-16 border-t border-dark-600 scroll-mt-16" id="escola">
+<div class="max-w-5xl mx-auto px-6">
+<p class="text-center text-purple-400 font-semibold mb-3 text-sm tracking-wide uppercase">La escuela</p>
+<h2 class="text-3xl md:text-4xl font-bold text-center mb-3">Lo fundamental del área, desde cero hasta el deploy</h2>
+<p class="text-neutral-400 text-center mb-12 max-w-2xl mx-auto">Un plan de estudios en 3 trayectos y 18 módulos: los mismos conceptos que se enseñan en Stanford, Berkeley y CMU, en portugués y con práctica open source accesible. Empieza <strong class="text-neutral-200">ahora mismo</strong> por el contenido abierto.</p>
+<div class="grid md:grid-cols-3 gap-6 mb-10">
+<!-- T1 -->
+<a class="bg-dark-800 border border-dark-600 rounded-xl p-6 hover:border-emerald-500/50 transition-all block group" href="https://linnoff88-dev.github.io/arckhe-vla/curso/trilha1/" target="_blank">
+<div class="w-10 h-10 rounded-lg bg-emerald-500/20 flex items-center justify-center mb-3"><span class="text-emerald-400 text-lg">📐</span></div>
+<span class="text-emerald-400 text-xs font-bold">TRAYECTO 1 · FUNDAMENTOS</span>
+<h3 class="font-bold text-lg mb-2 mt-1 group-hover:text-emerald-400 transition-colors">Qué es VLA</h3>
+<p class="text-sm text-neutral-400 mb-3">La evolución de LLM → VLM → VLA, anatomía de un modelo, panorama (RT-2, OpenVLA, π0), datasets, hardware y seguridad (ISO 10218).</p>
+<span class="text-emerald-400 text-xs font-medium">6 módulos · abrir ruta →</span>
+</a>
+<!-- T2 -->
+<a class="bg-dark-800 border border-dark-600 rounded-xl p-6 hover:border-blue-500/50 transition-all block group" href="https://linnoff88-dev.github.io/arckhe-vla/curso/trilha2/" target="_blank">
+<div class="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center mb-3"><span class="text-blue-400 text-lg">⚡</span></div>
+<span class="text-blue-400 text-xs font-bold">TRAYECTO 2 · APLICACIÓN TÉCNICA</span>
+<h3 class="font-bold text-lg mb-2 mt-1 group-hover:text-blue-400 transition-colors">Cómo hacerlo</h3>
+<p class="text-sm text-neutral-400 mb-3">Python, PyTorch y HuggingFace, LeRobot de principio a fin, simuladores (MuJoCo, Isaac Sim), ROS2, entrenamiento (ACT, Diffusion) y sim-to-real.</p>
+<span class="text-blue-400 text-xs font-medium">6 módulos · abrir ruta →</span>
+</a>
+<!-- T3 -->
+<a class="bg-dark-800 border border-dark-600 rounded-xl p-6 hover:border-purple-500/50 transition-all block group" href="https://linnoff88-dev.github.io/arckhe-vla/curso/trilha3/" target="_blank">
+<div class="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center mb-3"><span class="text-purple-400 text-lg">🎯</span></div>
+<span class="text-purple-400 text-xs font-bold">TRAYECTO 3 · AVANZADO</span>
+<h3 class="font-bold text-lg mb-2 mt-1 group-hover:text-purple-400 transition-colors">Hacia dónde va esto</h3>
+<p class="text-sm text-neutral-400 mb-3">Arquitectura dual-system, world models, generalización cross-embodiment, aplicaciones sectoriales, el mercado de US$ 7,2 bi y la hoja de ruta hasta 2030.</p>
+<span class="text-purple-400 text-xs font-medium">6 módulos · abrir ruta →</span>
+</a>
+</div>
+<div class="text-center">
+<a class="inline-block bg-primary text-dark-900 font-bold px-7 py-3.5 rounded-lg hover:bg-yellow-400 transition-colors" href="https://linnoff88-dev.github.io/arckhe-vla/curso/" target="_blank">Explora el currículo completo →</a>
+<p class="text-xs text-neutral-500 mt-3">Contenido abierto y gratuito · más de 50 fuentes académicas e industriales</p>
+</div>
+</div>
+</section>
+<!-- ============================================================ -->
+<!-- EXEMPLOS / CASOS REAIS                                        -->
+<!-- ============================================================ -->
+<section class="py-16 border-t border-dark-600">
+<div class="max-w-5xl mx-auto px-6">
+<h2 class="text-3xl md:text-4xl font-bold text-center mb-3">No es teoría. Ya está pasando.</h2>
+<p class="text-neutral-400 text-center mb-12 max-w-2xl mx-auto">Dónde la tecnología que vas a aprender ya genera valor en el mundo real — con empresas mencionadas por nombre.</p>
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+<div class="bg-dark-800 border border-dark-600 rounded-xl p-5">
+<p class="text-xl mb-2">🏭</p><h4 class="font-bold mb-1">Manufactura</h4>
+<p class="text-sm text-neutral-400"><strong class="text-neutral-200">BMW</strong> puso modelos VLA en producción permanente desde ene/2025. <strong class="text-neutral-200">Tesla Optimus</strong> trabaja en sus propias fábricas, con la meta de producir 1 millón de unidades al año hasta 2027.</p>
+</div>
+<div class="bg-dark-800 border border-dark-600 rounded-xl p-5">
+<p class="text-xl mb-2">📦</p><h4 class="font-bold mb-1">Logística</h4>
+<p class="text-sm text-neutral-400"><strong class="text-neutral-200">Amazon Robotics</strong> usa el humanoide Digit (Agility) en centros de distribución. <strong class="text-neutral-200">Skild AI</strong> realiza inspecciones, entregas de última milla y tareas en almacenes.</p>
+</div>
+<div class="bg-dark-800 border border-dark-600 rounded-xl p-5">
+<p class="text-xl mb-2">🏥</p><h4 class="font-bold mb-1">Salud</h4>
+<p class="text-sm text-neutral-400">A <strong class="text-neutral-200">CommonSpirit Health</strong> invirtió en Skild AI (ene/2026). Physical Intelligence prueba tareas de asistencia doméstica y cuidado.</p>
+</div>
+<div class="bg-dark-800 border border-dark-600 rounded-xl p-5">
+<p class="text-xl mb-2">🌾</p><h4 class="font-bold mb-1">Agro</h4>
+<p class="text-sm text-neutral-400">Cosecha selectiva, fenotipado y fumigación guiados por visión y lenguaje: uno de los sectores objetivo de las políticas de robótica de Japón y China.</p>
+</div>
+<div class="bg-dark-800 border border-dark-600 rounded-xl p-5">
+<p class="text-xl mb-2">🔓</p><h4 class="font-bold mb-1">Código abierto accesible</h4>
+<p class="text-sm text-neutral-400"><strong class="text-neutral-200">LeRobot</strong> (HuggingFace) + brazo <strong class="text-neutral-200">SO-101 a ~US$ 100</strong> permiten entrenar un robot real en casa. NVIDIA Physical AI Dataset ya superó los 4,8 mi de descargas.</p>
+</div>
+<div class="bg-dark-800 border border-dark-600 rounded-xl p-5">
+<p class="text-xl mb-2">👷</p><h4 class="font-bold mb-1">Una nueva profesión</h4>
+<p class="text-sm text-neutral-400">En China, surgió el trabajo de <em>enseñar a los robots</em> mediante teleoperación. Robot Learning Engineer, Sim Engineer y Data Teleoperator son puestos que no existían hace 3 años.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================ -->
+<!-- PARA QUEM                                                    -->
+<!-- ============================================================ -->
+<section class="py-16 border-t border-dark-600">
+<div class="max-w-4xl mx-auto px-6">
+<h2 class="text-3xl font-bold text-center mb-10">Esta formación es para ti si…</h2>
+<div class="grid md:grid-cols-2 gap-4">
+<div class="flex gap-3 items-start bg-dark-800 border border-dark-600 rounded-xl p-5"><span class="text-emerald-400 text-xl">✓</span><p class="text-sm text-neutral-300"><strong class="text-neutral-100">Eres desarrollador o ingeniero</strong> y quieres cambiar al área de mayor crecimiento y mejor remuneración en IA.</p></div>
+<div class="flex gap-3 items-start bg-dark-800 border border-dark-600 rounded-xl p-5"><span class="text-emerald-400 text-xl">✓</span><p class="text-sm text-neutral-300"><strong class="text-neutral-100">Estudias IA/ML</strong> pero siente que todo es texto e imagen, y quiere entrar en el mundo físico.</p></div>
+<div class="flex gap-3 items-start bg-dark-800 border border-dark-600 rounded-xl p-5"><span class="text-emerald-400 text-xl">✓</span><p class="text-sm text-neutral-300"><strong class="text-neutral-100">Trabaja en robótica/automatización</strong> y quieres dominar la capa de inteligencia (VLA).</p></div>
+<div class="flex gap-3 items-start bg-dark-800 border border-dark-600 rounded-xl p-5"><span class="text-emerald-400 text-xl">✓</span><p class="text-sm text-neutral-300"><strong class="text-neutral-100">Eres emprendedor o líder</strong> y necesitas entender a fondo dónde la robótica inteligente creará negocios.</p></div>
+</div>
+<p class="text-center text-neutral-400 text-sm mt-6">Requisito previo, con honestidad: lógica de programación y ganas de aprender. El resto te lo enseña la escuela, desde los fundamentos hasta la práctica.</p>
+</div>
+</section>
+<!-- ============================================================ -->
+<!-- CTA / INSCRIÇÃO                                               -->
+<!-- ============================================================ -->
+<section class="py-20 border-t border-dark-600 scroll-mt-16" id="inscricao">
+<div class="max-w-3xl mx-auto px-6 text-center">
+<div class="inline-flex items-center gap-2 bg-primary/10 border border-primary/40 rounded-full px-4 py-1.5 text-primary text-sm font-medium mb-6">🚀 La ventana está abierta ahora</div>
+<h2 class="text-3xl md:text-5xl font-extrabold mb-5 leading-tight">Entra en la nueva economía de los robots<br/><span class="text-emerald-400">mientras todavía es nueva.</span></h2>
+<p class="text-lg text-neutral-300 mb-8 max-w-xl mx-auto">Empieza hoy por los fundamentos abiertos y asegura tu lugar en la primera promoción de la formación completa. El mercado tiene un potencial de US$ 38 bi y cero formación especializada en Brasil. Tú decides de qué lado de la curva estarás.</p>
+<div class="flex flex-wrap justify-center gap-3">
+<a class="bg-primary text-dark-900 font-bold px-8 py-4 rounded-lg hover:bg-yellow-400 transition-colors text-lg" href="https://ARCKHÉ AI" target="_blank">Quiero inscribirme en ARCKHÉ AI →</a>
+<a class="border border-dark-600 px-8 py-4 rounded-lg hover:bg-dark-800 transition-colors text-neutral-300 text-lg" href="https://linnoff88-dev.github.io/arckhe-vla/curso/" target="_blank">Empezar por el contenido abierto</a>
+</div>
+<p class="text-xs text-neutral-500 mt-5">Sin rodeos: el plan de estudios ya está disponible. Puedes estudiar ahora y decidir después.</p>
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="py-12 text-center text-sm text-neutral-500 border-t border-dark-600 space-y-2">
+<p>Formación en IA Incorporada (VLA) · <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI">ARCKHÉ AI</a></p>
+<p>Investigación de mercado: 2024–2026 · Goldman Sachs · Morgan Stanley · WEF · PwC · Crunchbase · PitchBook · IFR · NVIDIA · HuggingFace</p>
+<p class="text-neutral-600">Los valores de mercado son proyecciones de terceros y varían según la metodología. Los salarios y las inversiones corresponden a las fuentes citadas en el año indicado.</p>
+</footer>
+</body>
+</html>
